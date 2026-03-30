@@ -96,3 +96,100 @@ h1 {
     list-style: none;
     margin: 16px 82px;
 }
+
+.episodes-container {
+    padding: 0 70px;
+}
+
+.episodes-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.image-label {
+    max-width: 389px;
+    width: 100%;
+    height: 432px;
+}
+
+.episodes-header h1{
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 1.2375;
+    letter-spacing: 0.05em;
+    color: #fff;
+}
+
+.episodes-header button {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.58824;
+    color: #fff;
+    border-radius: 6px;
+    width: 178px;
+    height: 51px;
+    background: #118da8;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.card-item {
+    background: #000;
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+}
+
+.card-content {
+    margin: 40px 40px 53px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content img {
+    max-width: 73px;
+    width: 100%;
+    height: 27px;
+    margin-bottom: 48px;
+}
+
+.episode {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.58824;
+    color: #118da8;
+    margin-bottom: 17px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    color: #fff;
+    margin-bottom: 28px;
+}
+
+.description-label {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 18px;
+}
+
+.card-content button {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    border-radius: 6px;
+    width: 208px;
+    height: 51px;
+    background: #118da8;
+}
