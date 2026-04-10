@@ -249,3 +249,66 @@ h2 {
     width: 650px;
     height: 743px;
 }
+
+.form-container {
+    margin: 100px 70px;
+}
+
+.form-wrapper {
+    border-radius: 32px;
+    height: 387px;
+    background: #000;
+    padding: 60px;
+    display: flex;
+    gap: 76px;
+}
+
+.form-wrapper .description {
+    margin-right: 227px;
+}
+
+.form-wrapper span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #118da8;
+    margin-bottom: 26px;
+}
+
+.form-wrapper h2 {
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+.form-wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-wrapper form input {
+    border: 1px solid #191919;
+    border-radius: 6px;
+    width: 522px;
+    height: 82px;
+    background: #191919;
+}
+
+.form-wrapper form input::placeholder {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 26px 19px;
+}
+
+.form-wrapper form button {
+    border-radius: 6px;
+    width: 87px;
+    height: 48px;
+    background: #118da8;
+}
+
