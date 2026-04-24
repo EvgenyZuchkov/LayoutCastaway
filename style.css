@@ -11,6 +11,13 @@ body {
 
 a {
     text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+button {
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .header-container {
@@ -30,9 +37,9 @@ a {
     margin: 20px 70px;
 }
 
-.header-container ul a{
-    text-decoration: none;
-    color: #fff;
+.header-container a{
+    transition: 0.5s;
+    scroll-behavior: smooth;
 }
 
 .navbar li {
@@ -42,9 +49,15 @@ a {
     color: #fff;
 }
 
+section{
+    position: relative;
+}
+
 .main-container {
     display: flex;
     margin: 40px 70px 43px;
+    align-items: center;
+    gap: 60px;
 }
 
 .main-image {
@@ -58,16 +71,13 @@ a {
     flex-direction: column;
 }
 
-.main-title {
-    margin: 314px 134px 90px 60px;
-}
-
 h1 {
     font-weight: 400;
     font-size: 70px;
     line-height: 1.25714;
     letter-spacing: 0.05em;
     color: #fff;
+    margin-bottom: 75px;
 }
 
 .next {
@@ -91,14 +101,23 @@ h1 {
     font-size: 15px;
     line-height: 1.6;
     color: #fff;
-    margin: 90px 82px 16px;
+    margin-bottom: 16px;
 }
 
-.main-content ul {
+.main-content ul,
+.last-nav-block ul{
     display: flex;
     gap: 17px;
     list-style: none;
-    margin: 16px 82px;
+}
+
+.music-venues-list li {
+    transition: 0.3s;
+}
+
+.music-venues-list li:hover,
+.last-nav-block a:hover {
+    transform:translateY(-5px);
 }
 
 .episodes-container {
@@ -218,6 +237,7 @@ h2 {
     width: 112px;
     height: 112px;
     margin-bottom: 20px;
+    transition: 1s;
 }
 
 .thirty-wrapper span{
@@ -299,6 +319,7 @@ h2 {
     width: 522px;
     height: 82px;
     background: #191919;
+    transition: 0.5s;
 }
 
 .form-wrapper form input::placeholder {
@@ -310,6 +331,7 @@ h2 {
 }
 
 .form-wrapper form button {
+    color: rgba(255, 255, 255, 0.7);
     border-radius: 6px;
     width: 87px;
     height: 48px;
@@ -372,11 +394,16 @@ h2 {
 
 .footer-wrapper .left-block .castaway-links img{
     margin-right: 10px;
+    transition: 0.5s;
 }
 
 .footer-wrapper li {
     list-style: none;
     margin-bottom: 10px;
+}
+
+.footer-wrapper li a {
+    transition: 0.5s;
 }
 
 .footer-wrapper .nav-block {
@@ -387,7 +414,6 @@ h2 {
     color: #fff;
 }
 
-
 .footer-wrapper .second-nav-block {
     font-weight: 400;
     font-size: 17px;
@@ -395,7 +421,59 @@ h2 {
     color: #fff;
 }
 
-.footer-wrapper .last-nav-block a {
-    margin-right: 17px;
+a:hover {
+    color: #118da8;
 }
 
+button:hover,
+form button:hover {
+    background: transparent;
+    border: 2px solid #118da8;;
+}
+
+.thirty-wrapper a:hover {
+    transform: rotate(90deg);
+}
+
+.form-wrapper form input:focus {
+    border: 1px solid #454444;
+    outline: none;
+}
+
+.footer-wrapper .castaway-links img:hover {
+    transform: translateY(-5px);
+}
+
+.main-container::before {
+    content: "";
+    display: inline-block;
+    width: 68px;
+    height: 74px;
+    background-image: url("assets/psevdo1.png");
+    background-size: cover;
+    position: absolute;
+    top: -14px;
+    left: 44px;
+}
+
+.next::before {
+    content: "";
+    display: inline-block;
+    width: 160px;
+    height: 104px;
+    background-image: url("assets/psevdo2.png");
+    background-size: cover;
+    position: absolute;
+}
+
+.description::before {
+    content: "";
+    display: inline-block;
+    width: 147px;
+    height: 91px;
+    background-image: url("assets/psevdo3.png");
+    background-size: cover;
+    position: absolute;
+    left: 32px;
+    bottom: -26px;
+}
