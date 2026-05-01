@@ -562,8 +562,8 @@ form button:hover {
 
     .description::before {
         transform: scaleX(-1);
-        left: 0;
-        right: 5px;
+        left: auto;
+        right: 18px;
         bottom: 34px;
     }
 
