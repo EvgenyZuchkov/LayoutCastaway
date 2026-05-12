@@ -75,7 +75,6 @@ section{
     border-radius: 12px;
     max-width: 650px;
     width: 100%;
-    height: 873px;
     object-fit: cover;
 }
 
@@ -183,7 +182,7 @@ section{
 }
 
 .card-content {
-    margin: 40px 40px 53px;
+    margin-left: 53px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -285,7 +284,6 @@ h2 {
 .thirty-wrapper .main-image {
     border-radius: 12px;
     max-width: 650px;
-    height: 743px;
     object-fit: cover;
 }
 
@@ -299,7 +297,7 @@ h2 {
     padding: 60px;
     display: flex;
     gap: 76px;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .form-wrapper span {
@@ -319,6 +317,7 @@ h2 {
 }
 
 .form-wrapper form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -327,7 +326,7 @@ h2 {
 .form-wrapper form input {
     border: 1px solid #191919;
     border-radius: 6px;
-    min-width: 522px;
+    max-width: 522px;
     width: 100%;
     height: 82px;
     background: #191919;
@@ -394,7 +393,8 @@ h2 {
 }
 
 .footer-wrapper .left-block {
-    min-width: 447px;
+    max-width: 447px;
+    width: 100%;
 }
 
 .footer-wrapper .left-block .castaway img{
@@ -583,6 +583,96 @@ form button:hover {
     .footer-wrapper .left-block .castaway{
         flex-grow: 1;
     }
+}
 
+@media screen and (max-width: 576px) {
+    .main-container {
+        padding: 0;
+    }
 
+    .main-container .main-image {
+        min-width: 335px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .main-container .main-title {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 1.25;
+        letter-spacing: 0.06em;
+        color: #fff;
+    }
+    .main-container .next {
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 1;
+        letter-spacing: 0.06em;
+        color: #fff;
+    }
+    .main-container .level {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 1;
+        letter-spacing: 0.06em;
+        color: #fff;
+    }
+
+    .episodes-container h2 {
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 1.29474;
+        letter-spacing: 0.08em;
+        color: #fff;
+    }
+    .episodes-container .card-item {
+        padding: 20px;
+    }
+    .episodes-container .card-content{
+        margin: 0;
+    }
+    .episodes-container .image-label{
+        margin-bottom: 30px;
+        max-width: 295px;
+        max-height: 240px;
+    }
+    .thirty-container {
+        padding: 0px 20px;
+        margin: 0;
+    }
+    .thirty-wrapper {
+        gap: 40px;
+    }
+    .thirty-container .main-image {
+        max-width: 295px;
+        width: 100%;
+        height: 467px;
+        object-fit: cover;
+
+    }
+    .thirty-wrapper a,
+    .thirty-wrapper span,
+    .thirty-wrapper h2,
+    .thirty-wrapper p {
+        margin-bottom: 20px;
+    }
+    .form-wrapper {
+        padding: 60px 20px;
+    }
+    .form-wrapper h2 {
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 1.004;
+        letter-spacing: 0.06em;
+        color: #fff;
+    }
+    .review-wrapper .review-block {
+        padding: 53px 21px;
+    }
+    .footer-container {
+        padding: 60px 40px;
+    }
+    .footer-wrapper .left-block {
+        margin-bottom: 77px;
+    }
 }
